@@ -1,0 +1,91 @@
+header { 
+    background-image: url(../images/bg.png);
+}
+
+.title {
+    padding: 240px 0 270px 0;
+}
+
+.title h1 {
+    font-size: 48px;
+    color: #735440;
+}
+
+.title button {
+    margin-top: 75px;
+    width: 160px;
+    height: 55px;
+    background-color: #57984C;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    padding: 20px, 30px;
+}
+
+.title button:hover {
+    background-color: #67b15a;
+    transition: all 0.3s ease;
+}
+
+.products {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-size: 20px;
+    background-color: #fff;
+}
+
+.vision {
+    background-image: url('../images/Union.png');
+    padding-top: 50px;
+}
+
+.vision__title {
+    font-size: 64px;
+}
+
+.vision__text {
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+
+
+.vision__img img {
+    width: 100%;
+    box-shadow: 14px 14px 8px 0px rgba(34, 60, 80, 0.06);
+}
+
+.vision__2 {
+    padding: 100px 0;
+}
+
+#btn_sub {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 991px){
+
+    .title {
+        padding: 140px 0 170px 0;
+    }
+    .vision {
+        text-align: center;
+    }
+    .vision__img {
+        padding-top: 50px;
+    }
+
+
+}
+@media (max-width: 767px){
+    .product__item img {
+        height: 100px;
+    }
+    header {
+        background-position: bottom;
+    }
+    .vision__img img {
+        width: 100%;
+    }
+    
+}
