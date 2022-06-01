@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=320, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contactUs.css">
+    <link rel="stylesheet" href="css/mainActiv.css">
+    <title>AGREDIA - Company profile</title>
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="logo col-lg-3">
+                    <img src="images/Logo.png" alt="Agridera" class="logo">
+                </div>
+                <div class="col-lg-5 ml-auto ">
+                    <nav>
+                        <div class="search col-lg-10">
+                            <!-- <input type="text" placeholder="Search" name="search">
+                            <button><img src="/images/search.png" alt="search"></button> -->
+                            <form class="" action="">
+                                <input type="text" placeholder="Search.." name="search">
+                                <button type="submit"><img src="images/search.png" alt="search"></button>
+                              </form>
+                        </div>
+                        <br>
+                        <div class="burgerMenu">
+                            <img src="images/menu.svg" class="openMenu" alt="menu">
+                            <img src="images/close.svg" class="closeMenu" alt="close">
+                        </div>
+                        <div class="menuUp">
+                            <ul class="menu d-flex justify-content-center">
+                                <li class="menu__item"> 
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#">Company</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#">Profile</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="tomatoAll.html">Products</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#">Services</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#">R&D</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="/contactUs.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+            </div>
+            </div>
+        </header>
+ 
+    <section class="headerImg">
+        <div class="container-fluid">
+            <div class="row">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contactUs">
+        <div class="container">
+            <div class="row">
+                <div class="col contactUs__title">
+                    <h1>Contact us</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="crosses col">
+                    <img src="images/xxx.png" alt="crosses">
+                </div>
+            </div>
+        <form v-on:submit.prevent="makeOrder()" v-if="!orderVisible">
+
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="contactUs__item">
+                        <p>Name *</p>
+                        <div class="name__input">
+                            <input type="name" required v-model="contactFields.name">
+                        </div>
+                    </div>
+                    <div class="contactUs__item">
+                        <p>Company Name</p>
+                        <div class="cName__input">
+                            <input type="name" name="cName" v-model="contactFields.cName">
+                        </div>
+                    </div>
+                    <div class="contactUs__item">
+                        <p>Position</p>
+                        <div class="position__input">
+                            <input type="text" name="position" v-model="contactFields.position">
+                        </div>
+                    </div>
+                    <div class="contactUs__item">
+                        <p>City</p>
+                        <div class="city__input">
+                            <input type="text" name="city" v-model="contactFields.city">
+                        </div>
+                    </div>
+                    <div class="contactUs__item">
+                        <p>Country</p>
+                        <div class="country__input">
+                            <input type="text" name="country" v-model="contactFields.country">
+                        </div>
+                    </div>
+                    <div class="contactUs__item">
+                        <p>Telephone</p>
+                        <div class="telephone__input">
+                            <input type="number" name="telephone" v-model="contactFields.telephone">
+                        </div>
+                    </div>
+                    <div class="contactUs__item">
+                        <p>Email *</p>
+                        <div class="email__input">
+                            <input type="email" name="email" required v-model="contactFields.email">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-7 ml-auto">
+                    <div class="contactUs__item">
+                        <p>You are a</p>
+                        <div class="youarea__input">
+                            <select name="youarea" v-model="contactFields.youarea">
+                                <option value="seed">seed producer</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                              </select>
+                        </div>
+                    </div>
+                    <div class="contactUs__item">
+                        <p>If other, please specify</p>
+                        <div class="otherspec__input">
+                            <input type="text" name="otherspec" v-model="contactFields.otherspec">
+                        </div>
+                    </div>
+                    <div class="contactUs__item">
+                        <p>You are interested in</p>
+                        <div class="interests__input">
+                            <textarea name="interests" v-model="contactFields.interests"></textarea>
+                        </div>
+                    </div>
+                    <div class="contactUs__item">
+                        <p>Please type this code</p>
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <img src="images/contactUs/code.svg" alt="code">
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="code__input">
+                                    <input type="text" name="code" class="code" v-model="contactFields.code">
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="code__button">
+                                    <input type="submit" value="Send Message">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </form>
+            <div class="orderInfo" v-if="orderVisible">
+                <div class="row">
+                    <div class="col">
+                        <h1>Your info</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p><h3>Name: </h3> <br>
+                        {{contactFields.name}}</p>
+                        <p><h3>Company Name: </h3> <br>
+                        {{contactFields.cName}}</p>
+                        <p><h3>Position: </h3> <br>
+                        {{contactFields.position}}</p>
+                        <p><h3>City: </h3> <br>
+                        {{contactFields.city}}</p>
+                        <p><h3>Country: </h3> <br>
+                        {{contactFields.country}}</p>
+                        <p><h3>Telephone: </h3> <br>
+                        {{contactFields.telephone}}</p>
+                        <p><h3>Email: </h3> <br>
+                        {{contactFields.email}}</p>
+                    </div>
+                    <div class="col">
+                        <p><h3>You are a: </h3> <br>
+                        {{contactFields.youarea}}</p>
+                        <p><h3>If other, please specify: </h3> <br>
+                        {{contactFields.otherspec}}</p>
+                        <p><h3>You are interested in: </h3> <br>
+                        {{contactFields.interests}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="address">
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <h3>Our Address</h3>
+                    </div>
+                </div>
+                <div class="address__text">
+                    <img src="images/line.svg" alt="line" class="line">
+                        <p>AGRIDERA Seeds & Agriculture Ltd.</p>
+                        <p>P.O Box 103,</p>
+                        <p>Gedera 70750, Israel.</p>
+                        <p>Telephone: <span class="greenText">+972 8 944 9222</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footerFirst" class="footerFirst">
+        <div class="container">
+            <div class="row">
+                    <div class="col-lg-8 col-md-12">
+                        <ul class="footer__menu">
+                            <li class="footer__item"> 
+                                <a href="#">PROFILE</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#">MANAGEMENT</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#">PRODUCTS</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#">R&D</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#">LINKS</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#">SITEMAP</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#">CONTACT</a>
+                            </li>
+                        </ul> 
+                    </div>
+                    <div class="col-lg-3 d-flex justify-content-center ml-auto">
+                        <li class="footer__link">
+                            <a href="#"><img src="images/linkedin.svg" alt="linkedin"></a>
+                        </li>
+                        <li class="footer__link">
+                            <a href="#"><img src="images/inst.svg" alt="instagram"></a>
+                        </li>
+                        <li class="footer__link">
+                            <a href="#"><img src="images/youtube.svg" alt="youtube"></a>
+                        </li>
+                        <li class="footer__link">
+                            <a href="#"><img src="images/Ico_tw.svg" alt="twitter"></a>
+                        </li>
+                        <li class="footer__link">
+                            <a href="#"><img src="images/Ico_fb.svg" alt="facebook"></a>
+                        </li>
+                    </div>
+            </div>
+        </div>
+</section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex justify-content-center ">
+                    AGRIDERA SEEDS & AGRICULTURE LTD. © 2020
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>
