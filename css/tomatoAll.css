@@ -1,5 +1,5 @@
 section {
-    background-color: #FCF0F0;
+    background-color: #FEC889;
 }
 
 hr {
@@ -15,7 +15,7 @@ p {
 }
 
 .headerImg {
-    background-image: url(../images/tomatoAll/bgTomatoAll.png);
+    background-image: url(../images/potato_banner.jpg);
     background-size: 140%;
     height: 480px;
     background-position: center;
@@ -35,7 +35,7 @@ p {
 }
 
 .borderedLeft {
-    border-left: 3px solid #EB5757;
+    border-left: 3px solid #F18203;
 }
 
 .borderedLeft .borderedLeft__text {
@@ -48,7 +48,7 @@ p {
 }
 
 .markets .container {
-    background-color: #FFFAFA;
+    background-color: #FEE5C7;
 }
 
 .markets__items {
@@ -91,7 +91,7 @@ p {
 }
 
 .products a {
-    color: #324950;
+    color: #774000;
 }
 
 .products a:hover {
