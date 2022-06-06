@@ -82,7 +82,29 @@
                 </div>
             </div>
         <form v-on:submit.prevent="makeOrder()" v-if="!orderVisible">
-
+            <div class="cart">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Изображение</th>
+                        <th scope="col">Наименование</th>
+                        <th scope="col">Описание</th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr v-if="cart" v-for="i in cart" style="width: 100%;">
+                        <td scope="row"><img :src="'images/'+i.image" height="50px" alt=""></td>
+                        <td>{{i.title}}</td>
+                        <td>{{i.short_text}}</td>
+                        <td><a @click.prevent="removeFromCart(i.id)"><img src="images/close_red.svg" height="20px" alt="close" :id="'remove_'+i.id"></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div v-if="cart.length<1">
+                    Корзина пуста
+                  </div>
+            </div>
 
             <div class="row">
                 <div class="col-lg-4">
