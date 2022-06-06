@@ -2,14 +2,12 @@ var app = new Vue({
     el: '.items, .item, .contactUs',
     data: {
         products:[
-            {id:1, title:"TAG 1000 (TAG 853)", short_text:"Tomato Determinate Red Standard Round", image:"tomato1.png", desc:"Resistance HR: ToMV:0-2; Fol: 1,2; Ve/Vd; IR: TYLCV "},
-            {id:2, title:"TAG 1001 (TAG 855)", short_text:"Tomato Determinate Red Standard Round", image:"tomato3.png", desc:"Resistance HR: ToMV:0-2; Fol: 1,2; Ve/Vd; IR: TYLCV "},
-            {id:3, title:"TAG 1002 (TAG 809)", short_text:"Tomato Determinate Red Standard Round", image:"tomato2.png", desc:"Resistance HR: ToMV:0-2; Fol: 1,2; Ve/Vd; IR: TYLCV "},
-            {id:4, title:"TAG 1003 (TAG 834 )", short_text:"Tomato Determinate Red Standard Round", image:"tomato4.png", desc:"Resistance HR: ToMV:0-2; Fol: 1,2; Ve/Vd; IR: TYLCV ."},
-            {id:5, title:"TAG 1004 (TAG 848)", short_text:"Tomato Determinate Red BEEF Round", image:"tomato5.png ", desc:"Resistance HR: ToMV:0-2; Fol: 1,2; Ve/Vd; IR: TYLCV "},
-            {id:6, title:"TAG 1005 (TAG 800)", short_text:"Tomato Determinate Red Standard Round", image:"tomato6.png", desc:"Resistance HR: ToMV:0-2; Fol: 1,2; Ve/Vd; IR: TYLCV "},
-            {id:6, title:"TAG 1006 (TAG 898)", short_text:"Tomato Determinate Red Elongated", image:"tomato7.png", desc:"Resistance HR: ToMV:0-2; Fol: 1,2; Ve/Vd; IR: TYLCV "},
-            {id:7, title:"TAG 1007 (TAG 816)", short_text:"Tomato Determinate Red Elongated", image:"tomato3.png", desc:"Resistance HR: ToMV:0-2; Fol: 1,2; Ve/Vd; IR: TYLCV "}
+            {id:1, title:"Russet Potatoes", short_text:"medium to large, oblong, or slightly flattened oval, light to medium brown russet-brown", image:"russet.png", desc:"floury, dry; light and fluffy; hearty skin that is chewy when cooked"},
+            {id:2, title:"Red Potatoes", short_text:"small to medium; round or slightly oblong; smooth, thin red skin; white flesh", image:"red_p.png", desc:"waxy, moist and smooth; creamy texture"},
+            {id:3, title:"White Potatoes", short_text:"small to medium; round to long shape; white or tan skin; white flesh", image:"white.png", desc:"medium starch; slightly creamy, slightly dense; thin, delicate skin"},
+            {id:4, title:"Yellow Potatoes", short_text:"marble to large size; round or oblong shape; light tan to golden skin; yellow to golden flesh", image:"yellow_p.png", desc:"slightly waxy, velvety, moist texture"},
+            {id:5, title:"Purple Potatoes", short_text:"small to medium-size; oblong to fingerling; deep purple, blue or slightly red skin; blue, purple lavender, pink or white flesh", image:"purple-p.png", desc:"moist; firm flesh. Note–all blue and purple Peruvian varieties have higher starch content and a floury texture"},
+            {id:6, title:"Fingerling Potatoes", short_text:"2-4 inches long; finger-shaped or oblong; red, orange, purple or white skin; red orange, purple, yellow or white flesh", image:"fingerling-potatoes_.png", desc:"waxy, firm texture"}
         ],
         product:[],
         cart:[],
