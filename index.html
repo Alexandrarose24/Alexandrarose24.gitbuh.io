@@ -22,9 +22,23 @@ body{
     font-size: 2vh;
     font-family: "Monaco", monospace;
 }
-    .rules_h{
+.rules_h{
     font-size: 3vh;
     }
+
+.row {
+  display: flex;
+}
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+.admin-name{
+    margin: auto;
+    font-size: 2vh;
+    color: rgb(187, 187, 187);
+    display: block;
+}
 </style>
 </head>
 <body>
@@ -59,6 +73,21 @@ body{
 <p id="9" hidden="true">Просимо учасників періодично переглядати правила, щоб бути в курсі останніх змін.</p>
 <button class = "button" onclick='hide("9")'>Розгорнути/згорнути</button>
 </div>
+<h2 style="text-align: center;">Адміни:</h2>
+<div class="row">
+    <div class="column">
+      <img src="images/buggy.jpg" alt="Choppa" style="width:100%">
+      <p>
+        <a style="text-align: center;" class="admin-name" href="https://t.me/almost_b_s">Almost Chopper</a>
+        </p>
+    </div>
+    <div class="column">
+      <img src="images/buggy.jpg" alt="Oleksa" style="width:100%">
+      <p>
+        <a style="text-align: center;" class="admin-name" href="https://t.me/Oleksa1024">Oleksa24</a>
+        </p>
+    </div>
+  </div>
 </body>
 <script>
     function hide(id){
